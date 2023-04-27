@@ -32,6 +32,8 @@ html {
 
 p {
     font-family: 'Poppins' !important;
+    font-size: .8rem;
+    line-height: 175%;
 }
 
 a {
@@ -68,10 +70,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -15px;
 }
 
 .header-content h2 {
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Poppins' !important;
     font-weight: 700;
     color: #fff;
@@ -96,11 +99,10 @@ main {
 .welcome__info {
     padding: 1.5rem 0 0 1.5rem;
     width: 332px;
-    font-weight: bold;
 }
 
 .welcome__info > h2 {
-    font-size: 30px;
+    font-size: 1.7rem;
     font-weight: 700;
     font-family: 'Poppins' !important;
     padding-bottom: 1rem;
@@ -132,19 +134,19 @@ section > aside h2 {
     border-bottom: 1px solid rgb(255, 255, 255);
     width: 100%;
     padding: 1.5rem;
-    font-size: 20px;
+    font-size: 1rem;
     display: flex;
 }
 
 .subscribe {
     width: 100%;
-    padding: 2rem 5rem;
+    padding: 2rem 6rem;
 }
 
 .subscribe p {
     color: var(--subscribe-color);
     font-weight: 400;
-    font-size: .9rem;
+    font-size: .8rem;
     text-align: center;
 }
 
@@ -154,6 +156,7 @@ section > aside h2:nth-child(1){
 
 section > aside h2:nth-child(2){
     background-color: var(--value-bg);
+    font-weight: unset;
 }
 
 footer {
@@ -168,7 +171,7 @@ footer {
 footer p {
     color: white;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .85rem;
     text-align: center;
 }
 
@@ -208,15 +211,43 @@ footer p {
     }
 
     .subscribe {
-        padding: 2rem;
+        padding: 1.3rem;
     }
 
     footer {
         justify-content: center;
+        padding: 1rem .3rem;
     }
 
     footer section {
         text-align: center;
     }
 
+    footer section:nth-child(2){
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .header-content h2 {
+        font-size: 1rem; 
+    }
+
+    .main__content {
+        width: 100%;
+    }
+    
+    .welcome__info {
+        width: 100%;
+    }
+
+    .transaction__info {
+        font-size: .8rem;
+    }
+
+    footer section:nth-child(2) img {
+        width: 140px;
+    }
 }
