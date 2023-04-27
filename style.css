@@ -161,7 +161,7 @@ section > aside h2:nth-child(2){
 
 footer {
     background-color: #000;
-    padding: 1rem 1.5rem;
+    padding: 1rem .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
