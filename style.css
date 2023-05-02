@@ -160,12 +160,16 @@ section > aside h2:nth-child(2){
 }
 
 footer {
-    background-color: #000;
-    padding: 1rem .7rem;
+    /* background-color: #000; */
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-image: url('./assets/BlueBackground.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
 }
 
 footer p {
@@ -219,7 +223,7 @@ footer p {
 
     footer {
         justify-content: center;
-        padding: 1rem 0;
+        padding: 3rem;
     }
 
     footer section {
